@@ -947,7 +947,7 @@ class AllGreaterConditionBuilder implements \yii\db\ExpressionBuilderInterface
      */ 
     public function build(ExpressionInterface $expression, array &$params = [])
     {
-        $value = $condition->getValue();
+        $value = $expression->getValue();
         
         $conditions = [];
         foreach ($expression->getColumns() as $column) {
